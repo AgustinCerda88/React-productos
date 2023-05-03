@@ -1,3 +1,5 @@
+
+
 export default function Modal({
   open,
   close,
@@ -10,6 +12,9 @@ export default function Modal({
   userType,
   id = "input",
 }) {
+
+  
+  
   if (!open) return null;
 
   const handleChange = (event) => {
@@ -47,7 +52,7 @@ export default function Modal({
           </ul>
         </div>
         <div>Añade un comentario</div>
-        <input
+        <input 
           onChange={handleChange}
           id="input"
           value={value}
